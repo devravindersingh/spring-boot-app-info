@@ -9,3 +9,12 @@ management:
         include:
           - health
           - info
+  info:
+    java:
+      enabled: true
+    env:
+      enabled: true
+
+info:
+  app:
+    website: www.ravinder.com
