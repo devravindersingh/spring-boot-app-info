@@ -66,6 +66,22 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>io.github.git-commit-id</groupId>
+				<artifactId>git-commit-id-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<configuration>
+							<excludeProperties>
+								<excludeProperty>time</excludeProperty>
+							</excludeProperties>
+							<includeOnlyProperties>
+								<property>git.commit.id</property>
+							</includeOnlyProperties>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
