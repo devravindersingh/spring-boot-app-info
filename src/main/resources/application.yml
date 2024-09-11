@@ -6,5 +6,6 @@ management:
   endpoints:
     web:
       exposure:
-        - health
-        - info
+        include:
+          - health
+          - info
